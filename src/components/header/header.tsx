@@ -12,16 +12,13 @@ const navigation: NavigationProps[] = [
 export default function Header() {
   return (
     <div>
-      <header className="flex justify-center items-center">
-        {/* <a href="/#" className="inline-flex">
-          Logo
-        </a> */}
+      <header className="flex justify-center items-center py-4">
         <nav>
-          <ul className="flex [&>li>a]:inline-block">
+          <ul className="flex [&>li>a]:inline-block space-x-4">
             {navigation.map((item) => (
               <li className="" key={item.name}>
                 <a
-                  className="hover:bg-orange-custom hover:text-gray-500 hover:rounded px-2 py-4"
+                  className="hover:bg-orange-custom hover:text-gray-500 hover:rounded font-semibold text-lg"
                   href={item.href}
                 >
                   {item.name}

@@ -13,10 +13,10 @@ export interface People {
   count: number;
   next: string;
   previous: null | string;
-  results: PeopleResult[];
+  results: PersonResult[];
 }
 
-export interface PeopleResult {
+export interface PersonResult {
   name: string;
   height: string;
   mass: string;
@@ -78,7 +78,7 @@ export interface FilmResult {
   opening_crawl: string;
   director: string;
   producer: string;
-  release_date: Date;
+  release_date: string;
   characters: string[];
   planets: string[];
   starships: string[];
@@ -93,10 +93,10 @@ export interface Starships {
   count: number;
   next: string;
   previous: null | string;
-  results: StarshipsResult[];
+  results: StarshipResult[];
 }
 
-export interface StarshipsResult {
+export interface StarshipResult {
   name: string;
   model: string;
   manufacturer: string;
